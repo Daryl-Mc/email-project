@@ -33,7 +33,7 @@
 
     <div class="container-fluid">
             <div class="row" style="min-height:300px;"> 
-                <div class="col-lg-2 d-flex flex-column justify-content-around"
+                <div class="col-lg-2 d-flex flex-column align-items-center"
                 style="border:1px solid red;">
                     <!--<h2>  Column 1 </h2> -->
                     <form class="d-flex" role="search"> <!-- Might be better in column 1-->
@@ -44,43 +44,51 @@
                         <div class="row"> Sent </div>
                         <div class="row"> Favorites </div>
                         <div class="row"> Saved </div>
-                </div> 
+                    </div> 
         <div class="col-lg-4 col-md-4 col-sm-4"
         style="border: 1px solid red;">
-            <div class="d-flex flex-column justify-content-around"> <!-- Nested elements to create the email layout column!-->
+            <div class="d-flex flex-column"> <!-- Nested elements to create the recieved emails column!-->
                 <h2> Column 2 </h2>
-                <div class="container msgbox" style="border: 1px solid black;">
+                <div class="container border border-2 rounded border-dark-subtle">
+                    <div class="row d-flex align-items-center">
+                        <h4 class="col col-md-6 h4"> Hello John </h4> <!-- Using Columns to align the items side by side in the box-->
+                        <p class="col col-md-4">02/14/24</p>
+                        <pfont>I was reaching out to inform you of your impending doom...</p>
+                        <button type= "button" class="btn btn-info rplybtn"> Reply </button>
+                    </div>
+                </div>
+                <div class="container border border-2 rounded border-dark-subtle">
                     <div class="row">
-                        <h5 class=""> Hello John </h2>
+                        <h4 class="col col-md-6 h4"> Hello John </h4>
+                        <p class="col col-md-4">02/14/24</p>
                         <p>I was reaching out to inform you of your impending doom...</p>
                         <button type= "button" class="btn btn-info rplybtn"> Reply </button>
                     </div>
                 </div>
-                <div class="container msgbox" style="border: 1px solid black;">
+                <div class="container border border-2 rounded border-dark-subtle">
                     <div class="row">
-                        <h5 class=""> Hello John </h2>
-                        <p>I was reaching out to inform you of your impending doom...</p>
-                        <button type= "button" class="btn btn-info rplybtn"> Reply </button>
-                    </div>
-                </div>
-                <div class="container msgbox" style="border: 1px solid black;">
-                    <div class="row">
-                        <h5 class=""> Hello John </h2>
+                        <h4 class="col col-md-6 h4"> Hello John </h4>
+                        <p class="col col-md-4">02/14/24</p>
                         <p>I was reaching out to inform you of your impending doom...</p>
                         <button type= "button" class="btn btn-info rplybtn"> Reply </button>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="col-lg-6 col-md-8"
+            <div class="col-lg-6 col-md-8 col-sm-8"
             style="border: 1px solid red;">
             <h2>Column 3</h2>
-                <div class=> 
-                    <h2> Hello John </h2>
-                    <p> I was reaching out to inform you of your impending doom! Please give me a call back at 222-222-2222</p>
-                    <form role="search"> 
-                        <input class="" type="text">
-                    </form>
+                <div class="container"> 
+                    <div class="row">
+                        <h2 class="col"> Hello John </h2>
+                        <p class="col col-md-2"> 2/14/2024</p>
+                        <p> I was reaching out to inform you of your impending doom! Please give me a call back at 222-222-2222</p>
+                        <div class="form-floating"> 
+                            <textarea type="text" class="form-control w-70" placeholder="Reply Here" style="height: 450px;"> 
+                            </textarea> <!-- Bootstrap with TextArea lets you use w to set max width and a height style to set the box sizing.-->
+                            <button class="btn btn-success"> Send</button>
+                        </div>
+                    </div>
                 </div>
             
             </div>

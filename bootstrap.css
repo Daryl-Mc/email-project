@@ -2,3 +2,19 @@ body{
     /* background-color: rgb(112, 93, 50); Outrageously Ugly Color */
 }
 /**/
+.pgcol{
+    min-height:500px;
+}
+.navbar{
+    min-height: 70px;
+}
+
+.usrprofile{
+    width:300px;
+}
+
+.colitembox{
+    min-width:200px;
+}
+
+
